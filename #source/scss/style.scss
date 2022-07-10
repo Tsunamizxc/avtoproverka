@@ -1,0 +1,81 @@
+@import "nullstyle.scss";
+.container {
+    max-width: 1136px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #1E3685;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {}
+    &__menu {
+        ul {
+            display: flex;
+            li {
+                padding-left: 12px;
+                padding-right: 12px;
+                a {
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    /* or 22px */
+                    /* Белый */
+                    color: #FFFFFF;
+                    /* Inside auto layout */
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
+            }
+        }
+    }
+}
+
+.menu {
+    &__item {}
+    &__contacts {
+        padding-top: 13px;
+        padding-bottom: 14px;
+        text-align: end;
+        &_number {
+            a {
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 140%;
+                /* or 25px */
+                /* Белый */
+                color: #FFFFFF;
+            }
+        }
+        &_call {
+            a {
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 140%;
+                /* or 18px */
+                /* Белый */
+                color: #FFFFFF;
+                padding-bottom: 2px;
+                border-bottom: 0.5px solid #FFFFFF;
+            }
+        }
+    }
+}
+
+.img_numb {
+    padding-top: 4px;
+}
+
+.number-link {}
+
+.call-link {}
