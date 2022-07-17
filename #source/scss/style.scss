@@ -525,13 +525,102 @@
                                     font-weight: 400;
                                     font-size: 16px;
                                     line-height: 150%;
-                                    /* identical to box height, or 24px */
-                                    /* Черный */
                                     color: #000000;
-                                    /* Inside auto layout */
                                     flex: none;
                                     order: 1;
                                     flex-grow: 0;
+                                }
+                            }
+                        }
+                        
+                        .system {
+                            background: #0263B2;
+                            padding-bottom: 56px;
+                            &__header {
+                                &_title {
+                                    padding-top: 56px;
+                                    padding-bottom: 40px;
+                                    h2 {
+                                        font-family: 'Play';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 36px;
+                                        line-height: 150%;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                            &__row {
+                                display: flex;
+                                justify-content: space-evenly;
+                                &_body {
+                                    max-width: 580px;
+                                    font-family: 'Arial';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 150%;
+                                    color: #FFFFFF;
+                                }
+                            }
+                            &__columns {
+                                padding-left: 80px;
+                                &_title {
+                                    h3 {
+                                        padding-bottom: 36px;
+                                        padding-left: 62px;
+                                        font-family: 'Play';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 18px;
+                                        line-height: 150%;
+                                        /* identical to box height, or 27px */
+                                        /* Белый */
+                                        color: #FFFFFF;
+                                    }
+                                }
+                                &_row {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    padding-left: 30px;
+                                }
+                            }
+                            &__column {
+                                display: flex;
+                                padding-right: 31px;
+                                &_img {
+                                    padding-right: 24px;
+                                }
+                                &_body {
+                                    h2 {
+                                        font-family: 'Arial';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 26px;
+                                        line-height: 150%;
+                                        /* identical to box height, or 39px */
+                                        /* Белый */
+                                        color: #FFFFFF;
+                                        /* Inside auto layout */
+                                        flex: none;
+                                        order: 0;
+                                        flex-grow: 0;
+                                    }
+                                    p {
+                                        font-family: 'Arial';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 150%;
+                                        /* or 21px */
+                                        /* Белый */
+                                        color: #FFFFFF;
+                                        /* Inside auto layout */
+                                        flex: none;
+                                        order: 1;
+                                        flex-grow: 0;
+                                        max-width: 156px;
+                                    }
                                 }
                             }
                         }
