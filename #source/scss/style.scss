@@ -4,6 +4,13 @@
                             margin: 0 auto;
                         }
                         
+                        @font-face {
+                            font-family: 'HelveticaNeueCyr';
+                            src: url(/fonts/helveticaneuecyr_black.otf);
+                            font-style: normal;
+                            font-weight: 700;
+                        }
+                        
                         .header {
                             background-color: #1E3685;
                             &__row {
@@ -620,6 +627,93 @@
                                         order: 1;
                                         flex-grow: 0;
                                         max-width: 156px;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .reviews {
+                            margin-top: 56px;
+                            &__header {
+                                &_title {
+                                    margin-bottom: 72px;
+                                    h2 {
+                                        font-family: 'Play';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 36px;
+                                        line-height: 150%;
+                                        /* identical to box height, or 54px */
+                                        /* Черный */
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .slider {
+                            display: flex;
+                            justify-content: space-evenly;
+                            margin-left: 24px;
+                            &__card {
+                                &_title {
+                                    padding-bottom: 10px;
+                                    h4 {
+                                        font-family: 'HelveticaNeueCyr';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 18px;
+                                        line-height: 150%;
+                                        /* or 27px */
+                                        /* ТГолубой */
+                                        color: #0263B2;
+                                        /* Inside auto layout */
+                                        flex: none;
+                                        order: 0;
+                                        flex-grow: 0;
+                                    }
+                                }
+                                &_content {
+                                    max-width: 290px;
+                                    padding-bottom: 24px;
+                                    p {
+                                        font-family: 'Arial';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 150%;
+                                        /* or 24px */
+                                        /* Черный */
+                                        color: #000000;
+                                    }
+                                }
+                                &_footer {
+                                    max-width: 310px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+                                &_footer-name {
+                                    h4 {
+                                        font-family: 'Arial';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 150%;
+                                        /* identical to box height, or 24px */
+                                        /* Серый текст */
+                                        color: #66727F;
+                                    }
+                                }
+                                &_footer-date {
+                                    p {
+                                        font-family: 'Arial';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 150%;
+                                        /* identical to box height, or 24px */
+                                        /* Серый текст */
+                                        color: #66727F;
                                     }
                                 }
                             }
