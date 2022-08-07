@@ -633,7 +633,8 @@
                         }
                         
                         .reviews {
-                            margin-top: 56px;
+                            background: #FAFCFF;
+                            padding-top: 56px;
                             &__header {
                                 &_title {
                                     margin-bottom: 72px;
@@ -652,10 +653,29 @@
                         }
                         
                         .slider {
-                            display: flex;
-                            justify-content: space-evenly;
-                            margin-left: 24px;
+                            padding-left: 60px;
+                            &__button {
+                                margin-top: 57px;
+                                text-align: center;
+                                padding-bottom: 60px;
+                                a {
+                                    padding: 17px 25px;
+                                    background: #B20237;
+                                    border-radius: 5px;
+                                    font-family: 'Arial';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 17px;
+                                    line-height: 20px;
+                                    /* identical to box height */
+                                    /* Белый */
+                                    color: #FFFFFF;
+                                }
+                            }
                             &__card {
+                                max-height: 368px;
+                                display: flex;
+                                flex-direction: column;
                                 &_title {
                                     padding-bottom: 10px;
                                     h4 {
@@ -675,7 +695,6 @@
                                 }
                                 &_content {
                                     max-width: 290px;
-                                    padding-bottom: 24px;
                                     p {
                                         font-family: 'Arial';
                                         font-style: normal;
@@ -691,6 +710,7 @@
                                     max-width: 310px;
                                     display: flex;
                                     justify-content: space-between;
+                                    padding-top: 20px;
                                 }
                                 &_footer-name {
                                     h4 {
@@ -718,3 +738,207 @@
                                 }
                             }
                         }
+                        
+                        .slider__border {
+                            width: 100%;
+                            border-bottom: 1px solid #E2E2E2;
+                            padding-top: 40px;
+                        }
+                        
+                        .accordion {
+                            align-items: center;
+                            background-color: white;
+                            color: #fff;
+                            cursor: pointer;
+                            padding: 16px;
+                            width: 560px;
+                            height: 93px;
+                            border: none;
+                            text-align: left;
+                            outline: none;
+                            font-size: 18px;
+                            transition: 0.5s;
+                            font-family: 'Arial';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 150%;
+                            border-radius: 10px;
+                            margin: 8px;
+                            /* or 30px */
+                            /* кликаб */
+                            color: #0173C1;
+                            h2 {
+                                width: 476px;
+                            }
+                        }
+                        
+                        .accordion-small {
+                            align-items: center;
+                            background-color: white;
+                            color: #fff;
+                            cursor: pointer;
+                            padding: 16px;
+                            width: 560px;
+                            height: 58px;
+                            border: none;
+                            text-align: left;
+                            outline: none;
+                            font-size: 18px;
+                            transition: 0.5s;
+                            font-family: 'Arial';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 150%;
+                            border-radius: 10px;
+                            margin: 8px;
+                            /* or 30px */
+                            /* кликаб */
+                            color: #0173C1;
+                            h2 {
+                                width: 476px;
+                            }
+                        }
+                        
+                        .accordion-big {
+                            align-items: center;
+                            background-color: white;
+                            color: #fff;
+                            cursor: pointer;
+                            padding: 16px;
+                            width: 560px;
+                            height: 118px;
+                            border: none;
+                            text-align: left;
+                            outline: none;
+                            font-size: 18px;
+                            transition: 0.5s;
+                            font-family: 'Arial';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 150%;
+                            border-radius: 10px;
+                            margin: 8px;
+                            /* or 30px */
+                            /* кликаб */
+                            color: #0173C1;
+                            h2 {
+                                width: 476px;
+                            }
+                        }
+                        
+                        .active,
+                        .accordion:hover {}
+                        
+                        .accordion:after {
+                            position: relative;
+                            top: -45px;
+                            content: '\002B';
+                            color: black;
+                            font-size: 18px;
+                            font-weight: bold;
+                            float: right;
+                            margin-left: 5px;
+                        }
+                        
+                        .active:after {
+                            content: "\2212";
+                        }
+                        
+                        .active,
+                        .accordion-small:hover {}
+                        
+                        .accordion-small:after {
+                            position: relative;
+                            top: -30px;
+                            content: '\002B';
+                            color: black;
+                            font-size: 18px;
+                            font-weight: bold;
+                            float: right;
+                            margin-left: 5px;
+                        }
+                        
+                        .active:after {
+                            content: "\2212";
+                        }
+                        
+                        .active,
+                        .accordion-big:hover {}
+                        
+                        .accordion-big:after {
+                            position: relative;
+                            top: -60px;
+                            content: '\002B';
+                            color: black;
+                            font-size: 18px;
+                            font-weight: bold;
+                            float: right;
+                            margin-left: 5px;
+                        }
+                        
+                        .active:after {
+                            content: "\2212";
+                        }
+                        
+                        .panel {
+                            color: #212121;
+                            background-color: #fff;
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: max-height 0.3s ease-out;
+                            margin: 8px;
+                            margin-top: -16px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-righ-radius: 10px;
+                            p {
+                                width: 504px;
+                                padding: 24px;
+                                font-family: 'Arial';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 150%;
+                                /* or 24px */
+                                /* Черный */
+                                color: #000000;
+                            }
+                        }
+                        
+                        .accord {
+                            background: #F2F8FC;
+                        }
+                        
+                        .accord {
+                            &__header {
+                                padding-top: 56px;
+                                padding-bottom: 48px;
+                                &_title {
+                                    h3 {
+                                        font-family: 'Play';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 36px;
+                                        line-height: 150%;
+                                        /* identical to box height, or 54px */
+                                        /* Черный */
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                            &__row {
+                                display: flex;
+                                justify-content: space-between;
+                                &_content {
+                                    padding-bottom: 56px;
+                                }
+                            }
+                        }
+                        
+                        .container {}
+                        
+                        .accordion {}
+                        
+                        .panel {}
