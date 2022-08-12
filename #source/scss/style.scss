@@ -937,8 +937,175 @@
                             }
                         }
                         
-                        .container {}
+                        .check {
+                            padding-bottom: 124px;
+                            &__header {
+                                padding-top: 58px;
+                                padding-bottom: 30px;
+                                &_title {
+                                    h2 {
+                                        font-family: 'Play';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 36px;
+                                        line-height: 150%;
+                                        /* identical to box height, or 54px */
+                                        /* Черный */
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                            &__row {
+                                display: flex;
+                                &_img {
+                                    position: relative;
+                                    img {
+                                        position: absolute;
+                                        left: 51px;
+                                        top: -20px;
+                                        width: 585px;
+                                    }
+                                }
+                            }
+                        }
                         
-                        .accordion {}
+                        .interactive {
+                            &_list {
+                                display: flex;
+                                flex-direction: column;
+                                input {
+                                    margin-top: 16px;
+                                    width: 600px;
+                                    height: 52px;
+                                    background: #FFFFFF;
+                                    border: 1px solid #CDD1D4;
+                                    border-radius: 5px;
+                                    padding: 15px;
+                                    font-family: 'Arial';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 17px;
+                                    line-height: 150%;
+                                    /* identical to box height, or 26px */
+                                    color: #999999;
+                                }
+                            }
+                        }
                         
-                        .panel {}
+                        .interactive-btn {
+                            padding-top: 40px;
+                            button {
+                                font-family: 'Arial';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 17px;
+                                line-height: 20px;
+                                /* identical to box height */
+                                /* Белый */
+                                color: #FFFFFF;
+                                padding: 17px 25px;
+                                background: #B20237;
+                                border-radius: 5px;
+                            }
+                        }
+                        
+                        .footer {
+                            padding-top: 40px;
+                            background: #1E3685;
+                            &__columns {
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            &__info {
+                                display: flex;
+                                justify-content: space-between;
+                                border-top: 1px solid rgba(255, 255, 255, 0.2);
+                                p {
+                                    padding-top: 37px;
+                                    padding-bottom: 23px;
+                                    font-family: 'Arial';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    color: rgba(245, 245, 245, 0.54);
+                                }
+                            }
+                        }
+                        
+                        .column {
+                            &__logo {
+                                &_title {
+                                    padding-bottom: 37px;
+                                    h2 {
+                                        font-family: 'Montserrat';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 36px;
+                                        line-height: 44px;
+                                        /* identical to box height */
+                                        color: #FAFAFA;
+                                    }
+                                }
+                                &_adres {
+                                    padding-bottom: 21px;
+                                    p {
+                                        font-family: 'Arial';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 18px;
+                                        line-height: 21px;
+                                        color: #FAFAFA;
+                                    }
+                                }
+                                &_pk {
+                                    padding-bottom: 48px;
+                                    p {
+                                        font-family: 'Arial';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                        color: #FAFAFA;
+                                    }
+                                }
+                            }
+                            &__menu {
+                                ul {
+                                    display: flex;
+                                    li {
+                                        padding-left: 15px;
+                                        a {
+                                            font-family: 'Arial';
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            font-size: 16px;
+                                            line-height: 18px;
+                                            color: #FAFAFA;
+                                        }
+                                    }
+                                }
+                            }
+                            &__contacts {
+                                &_socsite {
+                                    padding-bottom: 34px;
+                                    a {
+                                        padding-left: 5px;
+                                    }
+                                }
+                                &_number {
+                                    display: flex;
+                                    flex-direction: column;
+                                    a {
+                                        font-family: 'Arial';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 24px;
+                                        line-height: 28px;
+                                        /* identical to box height */
+                                        text-align: right;
+                                        color: #FAFAFA;
+                                    }
+                                }
+                            }
+                        }
